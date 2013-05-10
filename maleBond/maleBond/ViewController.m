@@ -180,6 +180,8 @@
     {
         [list removeObjectAtIndex:indexPath.row];
         [imageDetail removeObjectAtIndex:indexPath.row];
+        [text removeObjectAtIndex:indexPath.row];
+
 
         [mbTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]withRowAnimation:true];
     }
