@@ -156,9 +156,9 @@
 				013705C9173B3B65007E2CE9 /* DetailViewController.h */,
 				013705CA173B3B65007E2CE9 /* DetailViewController.m */,
 				013705CB173B3B65007E2CE9 /* DetailViewController.xib */,
-				013705AE173AD0EF007E2CE9 /* CustomTableViewCell.xib */,
 				013705A9173AD0BB007E2CE9 /* CustomTableCell.h */,
 				013705AA173AD0BB007E2CE9 /* CustomTableCell.m */,
+				013705AE173AD0EF007E2CE9 /* CustomTableViewCell.xib */,
 				0137058B173ACCA4007E2CE9 /* Supporting Files */,
 			);
 			path = maleBond;

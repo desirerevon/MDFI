@@ -43,6 +43,7 @@
             @"TRUST!",
             nil];
     
+    
     moreDetails = [[NSMutableArray alloc]initWithObjects:
                       @"Click here for more details",
                       @"Click here for more details",
