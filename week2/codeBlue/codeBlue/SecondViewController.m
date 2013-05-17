@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "DetailViewController.h"
+#import "CustomTableCell.h"
 
 @interface SecondViewController ()
 
@@ -157,21 +158,28 @@
 
 
 /*---Get Item List--------------------------------------------------------------------------------------------*/
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+-(UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    CustomTableCell *cell =[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        NSArray *views = [[NSBundle mainBundle]loadNibNamed:@"CustomView" owner:nil options:nil];
+        for(UIView *view in views)
+        {
+            if([view isKindOfClass:[CustomTableCell class]])
+            {
+                cell = (CustomTableCell*)view;
+                cell.contactName.text = [contactList objectAtIndex:indexPath.row];
+                cell.imageView.image = [UIImage imageNamed:[contactImages objectAtIndex:indexPath.row]];
+                
+            }
+        }
     }
-    cell.textLabel.text = (NSString*)[contactList objectAtIndex:indexPath.row];
-    
     return cell;
 }
-
 
 
 
@@ -195,6 +203,8 @@
     [self presentViewController:myDetailView animated:YES completion:nil];
     
 }
+
+
 
 
 

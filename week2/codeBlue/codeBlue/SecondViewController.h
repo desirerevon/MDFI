@@ -13,6 +13,7 @@
 
 
 {
+    //set outlets and arrays
     IBOutlet UITableView *contactTableView;
    
     NSMutableArray *contactList;
@@ -23,6 +24,7 @@
     DetailViewController *detailView;
 }
 
+//set properties
 @property (nonatomic, retain) DetailViewController *detailView;
 
 

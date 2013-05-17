@@ -137,6 +137,7 @@
 /* working together for search bar----------------------------------------------------------------------------------------*/
 
 
+//if row is equaled to str it will return the specific set message cells
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ChatViewController *chats = [[ChatViewController alloc]initWithNibName:@"ChatViewController" bundle:nil];

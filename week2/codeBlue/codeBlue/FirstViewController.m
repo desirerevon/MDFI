@@ -25,7 +25,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Home", @"Home");
-        self.tabBarItem.image = [UIImage imageNamed:@"home"];
+        self.tabBarItem.image = [UIImage imageNamed:@"first"];
     }
     return self;
 }
@@ -33,6 +33,7 @@
 /*TAB BAR BUTTON END----------------------------------------------------------------------------------------------*/
 
 
+//button is clicked and user is taken to next view
 -(IBAction)onClickDrill:(id)sender
 {
     DrillViewController *drillView = [[DrillViewController alloc] initWithNibName:@"DrillViewController" bundle:nil];
@@ -44,15 +45,14 @@
 
 
 
-
+//ui nav 
 -(void)viewWillAppear:(BOOL)animated
 {
     
     self.title=@"HOME";
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor]; 
     [super viewWillAppear:animated];
 }
-
 
 
 

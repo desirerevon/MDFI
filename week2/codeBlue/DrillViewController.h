@@ -11,14 +11,14 @@
 @interface DrillViewController : UIViewController <UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource>
 
 {
-
+//set outlets
 IBOutlet UISearchBar *mySearchBar;
 IBOutlet UITableView *myTableView;  
 
 }
 
 
-
+//set properties
 
 @property (nonatomic, retain) IBOutlet UISearchBar *mySearchBar;
 

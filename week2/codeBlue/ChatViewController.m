@@ -74,32 +74,30 @@
 //issues with th functionality
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    
     if (contactInt == 0)
-    {
+    
         return  [Derek count];
-    }
+    
     
     if (contactInt == 1)
-    {
+    
         return  [Dominique count];
-    }
+    
     if (contactInt == 2)
-    {
+    
         return  [Emily count];
-    }
+    
     if (contactInt == 3)
-    {
+    
         return  [Jasmine count];
-    }
-    
-    else
-    {
-    
+
+
      [self.tableView reloadData];
-    }
+    
+    return 0;
 }
 
+//sets cell with text
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";

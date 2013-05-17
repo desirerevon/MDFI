@@ -11,19 +11,19 @@
 @interface DetailViewController : UIViewController
 
 {
-  
+  //set outlets and str
     IBOutlet UITextView *textForDetail;
     NSString *contactName;
 
 
 }
 
-
+//set properties
 @property (nonatomic, retain)  IBOutlet UITextView *textForDetail;
 @property (nonatomic, retain) NSString *contactName;
 
+//set actions
 -(IBAction)onReturn:(id)sender;
--(id)initWithTextSelected:(NSString*)text;
 
 
 

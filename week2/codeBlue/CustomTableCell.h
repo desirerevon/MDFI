@@ -12,13 +12,12 @@
 @interface CustomTableCell : UITableViewCell <UITableViewDelegate>
 
 {
+    //set oulets
     IBOutlet UILabel *contactName;
-    IBOutlet UILabel *textLabel;
     
 }
-
+//set properties
 @property (nonatomic, retain) IBOutlet UILabel *contactName;
-@property (nonatomic, retain) IBOutlet UILabel *textLabel;
 
 
 @end

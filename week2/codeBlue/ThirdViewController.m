@@ -24,7 +24,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Safari", @"Safari");
-        self.tabBarItem.image = [UIImage imageNamed:@"safari"];
+        self.tabBarItem.image = [UIImage imageNamed:@"third"];
     }
     return self;
 }

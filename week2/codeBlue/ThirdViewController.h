@@ -13,5 +13,6 @@
 
 }
 
+//set action
 -(IBAction)onClickInternet:(id)sender;
 @end

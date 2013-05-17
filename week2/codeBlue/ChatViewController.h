@@ -11,6 +11,7 @@
 @interface ChatViewController : UITableViewController
 
 {
+    //set arrays
     NSMutableArray *Derek;
     NSMutableArray *Dominique;
     NSMutableArray *Emily;

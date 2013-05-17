@@ -33,6 +33,7 @@
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
     
     UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
+   
     UIViewController *viewController3 = [[[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil] autorelease];
     
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
