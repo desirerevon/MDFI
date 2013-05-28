@@ -25,8 +25,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Events", @"Events");
-        //self.tabBarItem.image = [UIImage imageNamed:@"calendar"];
+        self.title = NSLocalizedString(@"Locations", @"Location");
+        self.tabBarItem.image = [UIImage imageNamed:@"location"];
     }
     return self;
 }

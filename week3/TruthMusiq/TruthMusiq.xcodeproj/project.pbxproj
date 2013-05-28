@@ -25,6 +25,10 @@
 		010E0623174F408900466C2C /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010E0621174F408900466C2C /* DetailViewController.xib */; };
 		010E0625174F40AB00466C2C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010E0624174F40AB00466C2C /* MapKit.framework */; };
 		010E0627174F40B400466C2C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010E0626174F40B400466C2C /* CoreLocation.framework */; };
+		01C8111E1754763700787065 /* mapIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C8111D1754763700787065 /* mapIcon.png */; };
+		01C811201754763D00787065 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C8111F1754763D00787065 /* Default.png */; };
+		01C8112B175479B100787065 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C81129175479B100787065 /* location.png */; };
+		01C8112C175479B100787065 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C8112A175479B100787065 /* map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		010E0621174F408900466C2C /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = ../DetailViewController.xib; sourceTree = "<group>"; };
 		010E0624174F40AB00466C2C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		010E0626174F40B400466C2C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		01C8111D1754763700787065 /* mapIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapIcon.png; sourceTree = "<group>"; };
+		01C8111F1754763D00787065 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		01C81129175479B100787065 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		01C8112A175479B100787065 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,10 @@
 		010E05E6174F3F6900466C2C = {
 			isa = PBXGroup;
 			children = (
+				01C81129175479B100787065 /* location.png */,
+				01C8112A175479B100787065 /* map.png */,
+				01C8111F1754763D00787065 /* Default.png */,
+				01C8111D1754763700787065 /* mapIcon.png */,
 				010E05FB174F3F6900466C2C /* TruthMusiq */,
 				010E05F4174F3F6900466C2C /* Frameworks */,
 				010E05F2174F3F6900466C2C /* Products */,
@@ -187,6 +199,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C8112B175479B100787065 /* location.png in Resources */,
+				01C8112C175479B100787065 /* map.png in Resources */,
 				010E0600174F3F6900466C2C /* InfoPlist.strings in Resources */,
 				010E0608174F3F6900466C2C /* Default.png in Resources */,
 				010E060A174F3F6900466C2C /* Default@2x.png in Resources */,
@@ -194,6 +208,8 @@
 				010E0616174F401700466C2C /* ListViewController.xib in Resources */,
 				010E061B174F404200466C2C /* MapViewController.xib in Resources */,
 				010E0623174F408900466C2C /* DetailViewController.xib in Resources */,
+				01C8111E1754763700787065 /* mapIcon.png in Resources */,
+				01C811201754763D00787065 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
