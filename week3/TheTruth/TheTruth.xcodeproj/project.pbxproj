@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010E059E174F193E00466C2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010E059D174F193E00466C2C /* UIKit.framework */; };
+		010E05A0174F193E00466C2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010E059F174F193E00466C2C /* Foundation.framework */; };
+		010E05A2174F193E00466C2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010E05A1174F193E00466C2C /* CoreGraphics.framework */; };
+		010E05A8174F193E00466C2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 010E05A6174F193E00466C2C /* InfoPlist.strings */; };
+		010E05AA174F193E00466C2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E05A9174F193E00466C2C /* main.m */; };
+		010E05AE174F193E00466C2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E05AD174F193E00466C2C /* AppDelegate.m */; };
+		010E05B0174F193E00466C2C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E05AF174F193E00466C2C /* Default.png */; };
+		010E05B2174F193E00466C2C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E05B1174F193E00466C2C /* Default@2x.png */; };
+		010E05B4174F193E00466C2C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E05B3174F193E00466C2C /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		010E0599174F193E00466C2C /* TheTruth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheTruth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		010E059D174F193E00466C2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		010E059F174F193E00466C2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		010E05A1174F193E00466C2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		010E05A5174F193E00466C2C /* TheTruth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TheTruth-Info.plist"; sourceTree = "<group>"; };
+		010E05A7174F193E00466C2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		010E05A9174F193E00466C2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		010E05AB174F193E00466C2C /* TheTruth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheTruth-Prefix.pch"; sourceTree = "<group>"; };
+		010E05AC174F193E00466C2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		010E05AD174F193E00466C2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		010E05AF174F193E00466C2C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		010E05B1174F193E00466C2C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		010E05B3174F193E00466C2C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		010E0596174F193E00466C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010E059E174F193E00466C2C /* UIKit.framework in Frameworks */,
+				010E05A0174F193E00466C2C /* Foundation.framework in Frameworks */,
+				010E05A2174F193E00466C2C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010E058E174F193E00466C2C = {
+			isa = PBXGroup;
+			children = (
+				010E05A3174F193E00466C2C /* TheTruth */,
+				010E059C174F193E00466C2C /* Frameworks */,
+				010E059A174F193E00466C2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		010E059A174F193E00466C2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				010E0599174F193E00466C2C /* TheTruth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		010E059C174F193E00466C2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				010E059D174F193E00466C2C /* UIKit.framework */,
+				010E059F174F193E00466C2C /* Foundation.framework */,
+				010E05A1174F193E00466C2C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		010E05A3174F193E00466C2C /* TheTruth */ = {
+			isa = PBXGroup;
+			children = (
+				010E05AC174F193E00466C2C /* AppDelegate.h */,
+				010E05AD174F193E00466C2C /* AppDelegate.m */,
+				010E05A4174F193E00466C2C /* Supporting Files */,
+			);
+			path = TheTruth;
+			sourceTree = "<group>";
+		};
+		010E05A4174F193E00466C2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				010E05A5174F193E00466C2C /* TheTruth-Info.plist */,
+				010E05A6174F193E00466C2C /* InfoPlist.strings */,
+				010E05A9174F193E00466C2C /* main.m */,
+				010E05AB174F193E00466C2C /* TheTruth-Prefix.pch */,
+				010E05AF174F193E00466C2C /* Default.png */,
+				010E05B1174F193E00466C2C /* Default@2x.png */,
+				010E05B3174F193E00466C2C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		010E0598174F193E00466C2C /* TheTruth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 010E05B7174F193E00466C2C /* Build configuration list for PBXNativeTarget "TheTruth" */;
+			buildPhases = (
+				010E0595174F193E00466C2C /* Sources */,
+				010E0596174F193E00466C2C /* Frameworks */,
+				010E0597174F193E00466C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheTruth;
+			productName = TheTruth;
+			productReference = 010E0599174F193E00466C2C /* TheTruth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		010E0590174F193E00466C2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Desire Gardner";
+			};
+			buildConfigurationList = 010E0593174F193E00466C2C /* Build configuration list for PBXProject "TheTruth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 010E058E174F193E00466C2C;
+			productRefGroup = 010E059A174F193E00466C2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				010E0598174F193E00466C2C /* TheTruth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		010E0597174F193E00466C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010E05A8174F193E00466C2C /* InfoPlist.strings in Resources */,
+				010E05B0174F193E00466C2C /* Default.png in Resources */,
+				010E05B2174F193E00466C2C /* Default@2x.png in Resources */,
+				010E05B4174F193E00466C2C /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		010E0595174F193E00466C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010E05AA174F193E00466C2C /* main.m in Sources */,
+				010E05AE174F193E00466C2C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		010E05A6174F193E00466C2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				010E05A7174F193E00466C2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		010E05B5174F193E00466C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		010E05B6174F193E00466C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		010E05B8174F193E00466C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheTruth/TheTruth-Prefix.pch";
+				INFOPLIST_FILE = "TheTruth/TheTruth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		010E05B9174F193E00466C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheTruth/TheTruth-Prefix.pch";
+				INFOPLIST_FILE = "TheTruth/TheTruth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		010E0593174F193E00466C2C /* Build configuration list for PBXProject "TheTruth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010E05B5174F193E00466C2C /* Debug */,
+				010E05B6174F193E00466C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		010E05B7174F193E00466C2C /* Build configuration list for PBXNativeTarget "TheTruth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010E05B8174F193E00466C2C /* Debug */,
+				010E05B9174F193E00466C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 010E0590174F193E00466C2C /* Project object */;
+}
