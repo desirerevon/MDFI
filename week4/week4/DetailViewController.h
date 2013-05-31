@@ -16,10 +16,7 @@
 {
     
     IBOutlet UIWebView *myDetailView;
-    NSURLRequest *request;
-    NSURL *url;
-    NSURLConnection *connection;
-    NSMutableData *requestData;
+  
     
 }
 

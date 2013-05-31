@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SecondViewController : UIViewController <UIWebViewDelegate>
+@interface SecondViewController : UIViewController
+
+{
+    
+NSURLRequest *request;
+NSURL *url;
+NSURLConnection *connection;
+NSMutableData *requestData;
+    
+}
 
 @end

@@ -21,20 +21,63 @@
     }
     return self;
 }
+
 - (void)viewDidLoad
 {
+    //create objects
+    
+    
+    //created url
+    url = [[NSURL alloc]initWithString:@"http://api.twitter.com/1/statuses/user_timeline/default.xml"];
+    
+    //requests page called: pass in url not string
+    request= [[NSURLRequest alloc] initWithURL:url];
+    if (request != nil)
+    {
+        //requires a request : request var delegate self: viewController recieve actions that connection triggers
+        connection = [[NSURLConnection alloc]initWithRequest:request delegate:self];
+        
+        //creat mutable object
+        requestData = [NSMutableData data];
+        
+    }
+    
     [super viewDidLoad];
-    self.navigationController.navigationBar.tintColor=[UIColor blackColor];
+	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)viewDidUnload
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    
+    //pass back NS data and added to objects: request data object and append individually
+    //check if valid data
+    if (data !=nil)
+    {
+        //add this data to our existing requestData
+        [requestData appendData:data];
+    }
 }
 
+
+//called when you have ALL data from the request
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    
+    NSString *requestString = [[NSString alloc]initWithData:requestData encoding:NSASCIIStringEncoding];
+    if(requestString != nil)
+    {
+        NSLog(@"%@", requestString);
+    }
+    
+    
+}
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 @end
-
-
