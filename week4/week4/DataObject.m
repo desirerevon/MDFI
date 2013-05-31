@@ -8,7 +8,7 @@
 
 #import "DataObject.h"
 
-@implementation DataObject :NSObject
+@implementation DataObject
 
 
 @synthesize content;

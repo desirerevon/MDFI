@@ -12,13 +12,18 @@
 
 
 @interface DetailViewController : UIViewController
+
 {
     
     IBOutlet UIWebView *myDetailView;
-    //MyAnnotation* passAnnoStorage;
-    
+    NSURLRequest *request;
+    NSURL *url;
+    NSURLConnection *connection;
+    NSMutableData *requestData;
     
 }
+
+
 
 @property (nonatomic, strong) IBOutlet UIWebView *myDetailView;
 

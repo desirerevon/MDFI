@@ -106,7 +106,7 @@ UILabel *contentLabel;
     {
         [self.navigationController pushViewController:myDetailView animated:YES];
         DataObject *showDetails = [mainArray objectAtIndex:indexPath.row];
-        [myDetailView:showDetails:content title:showDetails.dateCreated];
+        //[myDetailView:showDetails:content title:showDetails.dateCreated];
     }
     
 }
