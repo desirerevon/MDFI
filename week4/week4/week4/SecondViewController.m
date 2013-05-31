@@ -8,70 +8,34 @@
 
 #import "SecondViewController.h"
 
+@interface SecondViewController ()
+
+
+@end
+
 @implementation SecondViewController
 
-
+@synthesize delegate, textView, xmlRaw;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Raw", @"Raw");
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        self.tabBarItem.image = [UIImage imageNamed:@"raw"];
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
-    //create objects
-    
-    
-    //created url
-    url = [[NSURL alloc]initWithString:@"http://api.twitter.com/1/statuses/user_timeline/default.xml"];
-    
-    //requests page called: pass in url not string
-    request= [[NSURLRequest alloc] initWithURL:url];
-    if (request != nil)
-    {
-        //requires a request : request var delegate self: viewController recieve actions that connection triggers
-        connection = [[NSURLConnection alloc]initWithRequest:request delegate:self];
-        
-        //creat mutable object
-        requestData = [NSMutableData data];
-        
-    }
+    //Display raw xml data
+    self.textView.text = self.xmlRaw;
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
-    
-    //pass back NS data and added to objects: request data object and append individually
-    //check if valid data
-    if (data !=nil)
-    {
-        //add this data to our existing requestData
-        [requestData appendData:data];
-    }
-}
-
-
-//called when you have ALL data from the request
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection
-{
-    
-    NSString *requestString = [[NSString alloc]initWithData:requestData encoding:NSASCIIStringEncoding];
-    if(requestString != nil)
-    {
-        NSLog(@"%@", requestString);
-    }
-    
-    
-}
 
 
 - (void)didReceiveMemoryWarning
@@ -81,3 +45,4 @@
 }
 
 @end
+
